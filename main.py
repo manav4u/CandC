@@ -59,6 +59,11 @@ def calculate_result():
         print("--------------------")
 
 
+def student_count():
+    print("\n--- Student Count ---")
+    print("Total Students:", len(students))
+
+
 def main():
     while True:
         print("\n==============================")
@@ -68,7 +73,8 @@ def main():
         print("1. Add Student")
         print("2. View Students")
         print("3. Calculate Result")
-        print("4. Exit")
+        print("4. Student Count")
+        print("5. Exit")
 
         choice = input("\nEnter your choice: ")
 
@@ -82,6 +88,9 @@ def main():
             calculate_result()
 
         elif choice == "4":
+            student_count()
+
+        elif choice == "5":
             print("Thank you for using Student Analyzer!")
             break
 
